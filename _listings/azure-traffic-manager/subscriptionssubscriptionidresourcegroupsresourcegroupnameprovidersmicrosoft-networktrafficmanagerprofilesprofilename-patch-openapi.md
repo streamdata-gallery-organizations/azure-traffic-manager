@@ -1,10 +1,11 @@
 ---
 swagger: "2.0"
 x-collection-name: Azure Traffic Manager
-x-complete: 1
+x-complete: 0
 info:
-  title: TrafficManagerManagementClient
+  title: Azure Traffic Manager API Profiles Update
   version: 1.0.0
+  description: Update a Traffic Manager profile.
 host: management.azure.com
 basePath: /
 schemes:
@@ -276,19 +277,17 @@ paths:
           description: OK
       tags:
       - Profiles
-  /providers/Microsoft.Network/trafficManagerGeographicHierarchies/default:
-    get:
-      summary: Geographic Hierarchies Get Default
-      description: Gets the default Geographic Hierarchy used by the Geographic traffic
-        routing method.
-      operationId: GeographicHierarchies_GetDefault
-      x-api-path-slug: providersmicrosoft-networktrafficmanagergeographichierarchiesdefault-get
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Geographic Hierarchies
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
 ---

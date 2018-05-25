@@ -1,10 +1,11 @@
 ---
 swagger: "2.0"
 x-collection-name: Azure Traffic Manager
-x-complete: 1
+x-complete: 0
 info:
-  title: TrafficManagerManagementClient
+  title: Azure Traffic Manager API Profiles Get
   version: 1.0.0
+  description: Gets a Traffic Manager profile.
 host: management.azure.com
 basePath: /
 schemes:
@@ -204,91 +205,17 @@ paths:
           description: OK
       tags:
       - Profiles
-    put:
-      summary: Profiles Create Or Update
-      description: Create or update a Traffic Manager profile.
-      operationId: Profiles_CreateOrUpdate
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networktrafficmanagerprofilesprofilename-put
-      parameters:
-      - in: query
-        name: No Name
-      - in: body
-        name: parameters
-        description: The Traffic Manager profile parameters supplied to the CreateOrUpdate
-          operation
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: profileName
-        description: The name of the Traffic Manager profile
-      - in: path
-        name: resourceGroupName
-        description: The name of the resource group containing the Traffic Manager
-          profile
-      responses:
-        200:
-          description: OK
-      tags:
-      - Profiles
-    delete:
-      summary: Profiles Delete
-      description: Deletes a Traffic Manager profile.
-      operationId: Profiles_Delete
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networktrafficmanagerprofilesprofilename-delete
-      parameters:
-      - in: query
-        name: No Name
-      - in: path
-        name: profileName
-        description: The name of the Traffic Manager profile to be deleted
-      - in: path
-        name: resourceGroupName
-        description: The name of the resource group containing the Traffic Manager
-          profile to be deleted
-      responses:
-        200:
-          description: OK
-      tags:
-      - Profiles
-    patch:
-      summary: Profiles Update
-      description: Update a Traffic Manager profile.
-      operationId: Profiles_Update
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupnameprovidersmicrosoft-networktrafficmanagerprofilesprofilename-patch
-      parameters:
-      - in: query
-        name: No Name
-      - in: body
-        name: parameters
-        description: The Traffic Manager profile parameters supplied to the Update
-          operation
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: profileName
-        description: The name of the Traffic Manager profile
-      - in: path
-        name: resourceGroupName
-        description: The name of the resource group containing the Traffic Manager
-          profile
-      responses:
-        200:
-          description: OK
-      tags:
-      - Profiles
-  /providers/Microsoft.Network/trafficManagerGeographicHierarchies/default:
-    get:
-      summary: Geographic Hierarchies Get Default
-      description: Gets the default Geographic Hierarchy used by the Geographic traffic
-        routing method.
-      operationId: GeographicHierarchies_GetDefault
-      x-api-path-slug: providersmicrosoft-networktrafficmanagergeographichierarchiesdefault-get
-      parameters:
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Geographic Hierarchies
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
 ---
