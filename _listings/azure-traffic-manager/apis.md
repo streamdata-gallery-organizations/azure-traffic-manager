@@ -6,10 +6,10 @@ description: 'Azure Traffic Manager gives you three methods for traffic routing:
   application or scenario.'
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-traffic-improved-application-performance.png
 x-kinRank: "10"
-x-alexaRank: ""
+x-alexaRank: "0"
 tags: Azure Traffic Manager
-created: "2018-05-24"
-modified: "2018-05-24"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/azure-traffic-manager/master/_listings/azure-traffic-manager/apis.md
 specificationVersion: "0.14"
 apis:
